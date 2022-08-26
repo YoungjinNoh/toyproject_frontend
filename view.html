@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="view.css">
+</head>
+
+<body>
+    <div class="TodoTemplate">
+        <div class="app-title">일정 관리</div>
+        <div class="content">
+            <form class="TodoInsert" onsubmit="return false">
+                <input type="text" placeholder="할 일을 입력하세요" />
+                <button>+</button>
+            </form>
+            <div class="TodoList">
+                <div class="TodoListItem">
+                    <div class="checkbox">
+                        <div class="icon">□</div>
+                        <div class="text">할 일</div>
+                    </div>
+                    <button class="remove">X</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="view.js"></script>
+</body>
+
+</html>
