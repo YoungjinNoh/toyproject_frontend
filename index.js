@@ -1,6 +1,10 @@
 let insertBtn = document.querySelector(".TodoInsert button");
 let todoList = document.querySelector(".TodoList")
 insertBtn.onclick = () => {
+    fetch("http://52.78.75.188:8080/todos").then((response) =>
+        console.log(response)
+    );
+
     let todoString = document.querySelector(".TodoInsert input").value;
     if (todoString === "") {
         return;
